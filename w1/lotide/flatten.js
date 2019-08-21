@@ -20,11 +20,20 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-const without = function (array, removeArray) {
-  var newArray =[]
-  for (var i = 0; i <array.length; i++ ) {
-    if (array [i] !== removeArray [i]) {
-      return newArray += array[i]
+
+var flatten = function(array) {
+  var newArray = []
+  // var pushArray = array.push(i)
+  for (var i = 0; i < array.length; i++) {
+    // console.log(array.length)
+    console.log(i)
+    newArray.push(array.pop(i))
+    
+    // if Array.isArray(array[i]) = false {
+      // return newArray += arra[i]       
     }
-  }return true
-}
+    return newArray
+  }
+
+
+console.log(flatten([1, 3, 4, 5, 6]))
