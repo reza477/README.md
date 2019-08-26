@@ -1,24 +1,23 @@
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
 
-  if (actual === expected) {
-    // console.log("Assertion Passed: " + actual + "===" + expected)
-    console.log(`Assertion Passed ${actual} === ${expected}`);
-  } else {
-    // console.log("Assertion Failed: " + actual + "!==" + expected)
-    console.log(`Assertion Passed ${actual} !== ${expected}`);
-  }
-};
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+//   if (actual === expected) {
+//     // console.log("Assertion Passed: " + actual + "===" + expected)
+//     console.log(`Assertion Passed ${actual} === ${expected}`);
+//   } else {
+//     // console.log("Assertion Failed: " + actual + "!==" + expected)
+//     console.log(`Assertion Passed ${actual} !== ${expected}`);
+//   }
+// };
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
 
-array1 = [];
-var tail = function(array) {
-  for (var i = 1; i < array.length; i++) {
-   array1.push(array[i]);
-  }
-  return array1;
+
+
+const tail = function(array) {
+  return array.slice(1);
 };
 
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// assertEqual(tail(words), ["Lighthouse", "Labs"]); // original array should still have 3 elements!
 
-[1, 2, 3] === [1, 2, 3] // => false
-[1, 2, 3] == [1, 2, 3] // => false
+module.exports = tail;

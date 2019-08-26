@@ -1,13 +1,13 @@
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
 
-  if (actual === expected) {
-    // console.log("Assertion Passed: " + actual + "===" + expected)
-    console.log(`Assertion Passed ${actual} === ${expected}`)
-  } else {
-    // console.log("Assertion Failed: " + actual + "!==" + expected)
-    console.log(`Assertion Failed ${actual} !== ${expected}`)
-  }
-};
+//   if (actual === expected) {
+//     // console.log("Assertion Passed: " + actual + "===" + expected)
+//     console.log(`Assertion Passed ${actual} === ${expected}`)
+//   } else {
+//     // console.log("Assertion Failed: " + actual + "!==" + expected)
+//     console.log(`Assertion Failed ${actual} !== ${expected}`)
+//   }
+// };
 
 
 
@@ -28,5 +28,7 @@ const eqArrays = function(array1, array2) {
 //     }
 //   }
 // }
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 3, 5],[1, 4, 5]), true)
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays([1, 3, 5],[1, 4, 5]), true);
+
+module.exports = eqArrays;
