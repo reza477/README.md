@@ -1,10 +1,18 @@
-var middle = function(array) {
-  var m = array.length / 2
-  var n = (array.length + 1) / 2
-  if (array.length % 2 === 0) {
-    return array.slice(m, m + 2 )
-  } else if (array.length % 2 !== 0) {
-    return array.slice(n-1, n )
+const middle = function(array) {
+  let midArr = (array.length / 2);
+  midArr = Math.floor(midArr);
+  let answer = [];
+      if ((array.length) === 1 || array.length === 2) {
+          return answer;
+      } else if ((array.length % 2) !== 0) {
+          answer.push(array[midArr]);
+          return answer;
+      } else {
+          answer.push(array[midArr-1]);
+          answer.push(array[midArr]);
+          return answer;
+      }
   }
-}
-
+  
+  module.exports = middle;
+  // console.log(middle([7,8,9,10,11,12]));
