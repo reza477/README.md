@@ -1,15 +1,15 @@
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
 
-  if (actual === expected) {
-    // console.log("Assertion Passed: " + actual + "===" + expected)
-    console.log(`Assertion Passed ${actual} === ${expected}`)
-  } else {
-    // console.log("Assertion Failed: " + actual + "!==" + expected)
-    console.log(`Assertion Passed ${actual} !== ${expected}`)
-  }
-};
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+//   if (actual === expected) {
+//     // console.log("Assertion Passed: " + actual + "===" + expected)
+//     console.log(`Assertion Passed ${actual} === ${expected}`)
+//   } else {
+//     // console.log("Assertion Failed: " + actual + "!==" + expected)
+//     console.log(`Assertion Passed ${actual} !== ${expected}`)
+//   }
+// };
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
 
 var countLetters = function(string) {
   const results = {}
@@ -25,4 +25,6 @@ var countLetters = function(string) {
 }
 
 
-console.log(countLetters("lighthouse in the house"))
+// console.log(countLetters("lighthouse in the house"))
+
+module.exports = assertArraysEqual
